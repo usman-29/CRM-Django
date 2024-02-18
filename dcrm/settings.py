@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dcrm',
-        'USER': 'root',
-        'PASSWORD': 'usman123',
+        'USER': 'USER',
+        'PASSWORD': 'PASSWORD',
         'HOST': 'localhost',
         'PORT': '3306',
     }
