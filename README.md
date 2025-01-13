@@ -13,41 +13,42 @@ Welcome to Django CRM with MySQL! This project is a Customer Relationship Manage
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
-   ```
-   git clone https://github.com/username/CRM-Django.git
+   ```bash
+   git clone https://github.com/usman-29/CRM-Django.git
    ```
 
 2. **Install the required dependencies:**
-   ```
+   ```bash
    pip install django
    pip install mysqlclient
    ```
 
 3. **Configure Django settings:**
-   ```
+   Update the `DATABASES` configuration in the Django settings file:
+   ```python
    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'your_database_name',
-        'USER': 'your_username',
-        'PASSWORD': 'your_password',
-        'HOST': 'your_mysql_host',
-        'PORT': '3306', # Default MySQL port
-    }
-}
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'your_database_name',
+           'USER': 'your_username',
+           'PASSWORD': 'your_password',
+           'HOST': 'your_mysql_host',
+           'PORT': '3306', # Default MySQL port
+       }
+   }
    ```
 
 4. **Apply migrations:**
-   ```
+   ```bash
    python manage.py migrate
    ```
 
 5. **Run the Django development server:**
-   ```
+   ```bash
    python manage.py runserver
    ```
 
-6. **Access the application at** `http://localhost:8000` **in your web browser.**
+6. **Access the application at** [http://localhost:8000](http://localhost:8000) **in your web browser.**
 
 ## Usage
 
